@@ -1,24 +1,24 @@
 # NetworkProject
 Author:Nikolaos Tzallas
 AEM:4728
-Εργασία Client-Server Handler
+#Εργασία Client-Server Handler
 Το σύστημα χρησιμοποιεί ένα Request-Reply πρωτόκολλο, όπου οι clients στέλνουν αιτήσεις (requests) στον server και ο server απαντά με αποτελέσματα (responses). 
 Με αυτόν τον τρόπο επιτυγχάνεται η επικοινωνία μεταξύ πολλών χρηστών. 
 
-Χρησιμοποιούμενες Τεχνολογίες
+#Χρησιμοποιούμενες Τεχνολογίες
 Java Sockets (TCP) για την επικοινωνία client-server.
 I/O Streams (BufferedReader και PrintWriter) για την ανάγνωση και αποστολή μηνυμάτων.
 Threads για την ταυτόχρονη εξυπηρέτηση πολλαπλών clients.
 Δομές δεδομένων όπως Map και ArrayList για την αποθήκευση λογαριασμών και μηνυμάτων.
 
-ΚΛΑΣΕΙΣ
-Account
+#ΚΛΑΣΕΙΣ
+#Account
 Ο server διατηρεί όλους τους λογαριασμούς σε μια λίστα accounts.
 
-Message
+#Message
 Χρησιμοποιείται για αποθήκευση και προβολή μηνυμάτων στον server.
 
-Server
+#Server
 Κάθε σύνδεση εκχωρείται σε δικό της Thread.
 Create Account
 Show Accounts
@@ -28,7 +28,7 @@ Read Message
 Delete Message
 Χρησιμοποιεί authToken για έλεγχο πρόσβασης.
 
-Client
+#Client
 Στέλνει αιτήματα στον server.
 Παίρνει input από τον χρήστη και εμφανίζει τα αποτελέσματα.
 Καλεί τις λειτουργίες του server μέσω FN_ID και παραμέτρων.
